@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-hilton-gray-50 font-whitney;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-walbaum text-hilton-blue tracking-tight;
+  }
+}
+
+@layer components {
+  .hilton-button {
+    @apply bg-hilton-blue text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition-colors font-whitney;
+  }
+
+  .hilton-input {
+    @apply rounded-lg border-hilton-gray-300 focus:border-hilton-blue focus:ring-hilton-blue font-whitney;
+  }
+
+  .hilton-select {
+    @apply rounded-lg border-hilton-gray-300 focus:border-hilton-blue focus:ring-hilton-blue font-whitney;
+  }
+
+  .hilton-card {
+    @apply bg-white rounded-xl p-6 shadow-sm border border-hilton-gray-200;
+  }
+}
